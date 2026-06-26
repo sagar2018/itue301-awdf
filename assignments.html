@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignments ITUE301</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── Navbar ─────────────────────────────────────────────────────────────── -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">ITUE301</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="overview.html">Overview</a></li>
+        <li class="nav-item"><a class="nav-link" href="practicals.html">Practicals</a></li>
+        <li class="nav-item"><a class="nav-link active" href="assignments.html">Assignments</a></li>
+        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+      </ul>
+      <!-- <div class="view-mode-toggle">
+        <label for="viewModeToggle" id="viewModeLabel">Student View</label>
+        <div class="form-check form-switch mb-0">
+          <input class="form-check-input" type="checkbox" id="viewModeToggle" role="switch">
+        </div>
+      </div> -->
+    </div>
+  </div>
+</nav>
+
+<!-- ── Page Header ────────────────────────────────────────────────────────── -->
+<div class="page-header">
+  <div class="container">
+    <h1>Additional Assignments</h1>
+    <p class="sub">7 assignments · 10 marks each · graded individually</p>
+  </div>
+</div>
+
+<!-- ── Main ───────────────────────────────────────────────────────────────── -->
+<main class="container">
+
+  <!-- Filter bar -->
+  <div class="filter-bar">
+    <button class="btn btn-outline-primary active" data-filter="all">All</button>
+    <button class="btn btn-outline-primary" data-filter="4">Week 4</button>
+    <button class="btn btn-outline-primary" data-filter="7">Week 7</button>
+    <button class="btn btn-outline-primary" data-filter="9">Week 9</button>
+    <button class="btn btn-outline-primary" data-filter="10">Week 10</button>
+    <button class="btn btn-outline-primary" data-filter="11">Week 11</button>
+    <button class="btn btn-outline-primary" data-filter="12">Week 12</button>
+    <button class="btn btn-outline-primary" data-filter="13">Week 13</button>
+  </div>
+
+  <!-- Summary info -->
+  <p class="text-muted mb-3" style="font-size:0.85rem;">
+    <i class="bi bi-info-circle"></i>
+    Assignments are released on the week indicated. Download the description from Google Drive, 
+    complete the work, and push to the provided GitHub repository before the deadline.
+  </p>
+
+  <!-- No-results notice -->
+  <div id="noResults" class="alert alert-secondary py-2" style="display:none;">
+    No assignments for the selected week.
+  </div>
+
+  <!-- Cards grid -->
+  <div class="row g-3" id="assignmentGrid">
+
+    <!-- ── Assignment 1 Week 4 ──────────────────────────────────────── -->
+    <div class="col-md-6 col-lg-4 assignment-card" data-week="4">
+      <div class="card h-100">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <span><span class="badge wk-backend">Week 4</span> &nbsp; Assignment 1</span>
+          <span class="badge bg-success">Auto-graded</span>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Richardson Maturity Model Evaluating Your REST API</h5>
+          <p class="text-muted mb-2" style="font-size:0.83rem;">CO2 &nbsp;·&nbsp; 10 marks</p>
+          <p class="mb-2" style="font-size:0.88rem;">
+            Evaluate the Task Management API built in Practical 4 against the Richardson Maturity
+            Model (Levels 0–3). Identify the current level, justify your answer, and improve the API
+            to reach at least Level 2. Document findings in <code>MATURITY.md</code>.
+          </p>
+          <p class="mb-2" style="font-size:0.83rem;">
+            <strong>Topics:</strong> Richardson Maturity Model (L0–L3), RESTful API design evaluation, HATEOAS awareness
+          </p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="#" class="btn btn-sm btn-primary drive-btn" data-drive-key="A_W4" target="_blank" rel="noopener">
+              <i class="bi bi-file-earmark-text"></i> Description
+            </a>
+          </div>
+          <!-- Faculty only -->
+          <div class="faculty-only">
+            <div class="faculty-note">
+              <strong><i class="bi bi-clipboard-check"></i> Rubric</strong>
+              Maturity Evaluation (4) · Level 2 Compliance (3) · HATEOAS Awareness (3)
+            </div>
+            <div class="faculty-note">
+              <strong><i class="bi bi-github"></i> Repository</strong>
+              assignment-w4-&lt;rollno&gt; · MATURITY.md required · Passing: 7 / 10 (70%)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Assignment 2 Week 7 ──────────────────────────────────────── -->
+    <div class="col-md-6 col-lg-4 assignment-card" data-week="7">
+      <div class="card h-100">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <span><span class="badge wk-backend">Week 7</span> &nbsp; Assignment 2</span>
+          <span class="badge bg-success">Auto-graded</span>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Threat Modelling, HTTPS/TLS Awareness, and Secure Coding</h5>
+          <p class="text-muted mb-2" style="font-size:0.83rem;">CO2, CO6 &nbsp;·&nbsp; 10 marks</p>
+          <p class="mb-2" style="font-size:0.88rem;">
+            Apply a simplified STRIDE threat model to the Task Management application.
+            Enable HTTPS locally using mkcert, and add NoSQL injection prevention using
+            <code>express-mongo-sanitize</code>. Document all findings in <code>SECURITY.md</code>.
+          </p>
+          <p class="mb-2" style="font-size:0.83rem;">
+            <strong>Topics:</strong> STRIDE threat model, HTTPS/TLS, express-mongo-sanitize, secure coding
+          </p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="#" class="btn btn-sm btn-primary drive-btn" data-drive-key="A_W7" target="_blank" rel="noopener">
+              <i class="bi bi-file-earmark-text"></i> Description
+            </a>
+          </div>
+          <div class="faculty-only">
+            <div class="faculty-note">
+              <strong><i class="bi bi-clipboard-check"></i> Rubric</strong>
+              STRIDE Analysis (4) · HTTPS Setup (3) · Input Sanitization (3)
+            </div>
+            <div class="faculty-note">
+              <strong><i class="bi bi-github"></i> Repository</strong>
+              assignment-w7-&lt;rollno&gt; · SECURITY.md required · Passing: 7 / 10 (70%)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Assignment 3 Week 9 ──────────────────────────────────────── -->
+    <div class="col-md-6 col-lg-4 assignment-card" data-week="9">
+      <div class="card h-100">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <span><span class="badge wk-optimize">Week 9</span> &nbsp; Assignment 3</span>
+          <span class="badge bg-success">Auto-graded</span>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Performance Load Testing with Apache Bench</h5>
+          <p class="text-muted mb-2" style="font-size:0.83rem;">CO4 &nbsp;·&nbsp; 10 marks</p>
+          <p class="mb-2" style="font-size:0.88rem;">
+            Run load tests against the Task Management API using Apache Bench (<code>ab</code>).
+            Measure and compare RPS, average latency, and error rate for
+            <code>GET /tasks</code> with and without caching. Document results in <code>LOADTEST.md</code>.
+          </p>
+          <p class="mb-2" style="font-size:0.83rem;">
+            <strong>Topics:</strong> Performance load testing, RPS, latency, error rate, Apache Bench
+          </p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="#" class="btn btn-sm btn-primary drive-btn" data-drive-key="A_W9" target="_blank" rel="noopener">
+              <i class="bi bi-file-earmark-text"></i> Description
+            </a>
+          </div>
+          <div class="faculty-only">
+            <div class="faculty-note">
+              <strong><i class="bi bi-clipboard-check"></i> Rubric</strong>
+              Test Execution (4) · Comparison Table (3) · Analysis (3)
+            </div>
+            <div class="faculty-note">
+              <strong><i class="bi bi-github"></i> Repository</strong>
+              assignment-w9-&lt;rollno&gt; · LOADTEST.md required · Passing: 7 / 10 (70%)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Assignment 4 Week 10 ─────────────────────────────────────── -->
+    <div class="col-md-6 col-lg-4 assignment-card" data-week="10">
+      <div class="card h-100">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <span><span class="badge wk-optimize">Week 10</span> &nbsp; Assignment 4</span>
+          <span class="badge bg-warning text-dark">Partial Auto</span>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Monolithic vs Microservices Architecture Analysis</h5>
+          <p class="text-muted mb-2" style="font-size:0.83rem;">CO4 &nbsp;·&nbsp; 10 marks</p>
+          <p class="mb-2" style="font-size:0.88rem;">
+            Analyse the Task Management application as a monolith and propose a microservices
+            decomposition with at least 3 services. Document trade-offs and justify the appropriate
+            architecture choice in <code>ARCHITECTURE.md</code>.
+          </p>
+          <p class="mb-2" style="font-size:0.83rem;">
+            <strong>Topics:</strong> Monolithic vs Microservices, stateless services, service decomposition
+          </p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="#" class="btn btn-sm btn-primary drive-btn" data-drive-key="A_W10" target="_blank" rel="noopener">
+              <i class="bi bi-file-earmark-text"></i> Description
+            </a>
+          </div>
+          <div class="faculty-only">
+            <div class="faculty-note">
+              <strong><i class="bi bi-clipboard-check"></i> Rubric</strong>
+              Architecture Diagrams (4) · Trade-off Table (3) · Decision + Stateless Note (3)
+            </div>
+            <div class="faculty-note">
+              <strong><i class="bi bi-github"></i> Repository</strong>
+              assignment-w10-&lt;rollno&gt; · ARCHITECTURE.md required · Passing: 7 / 10 (70%)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Assignment 5 Week 11 ─────────────────────────────────────── -->
+    <div class="col-md-6 col-lg-4 assignment-card" data-week="11">
+      <div class="card h-100">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <span><span class="badge wk-devops">Week 11</span> &nbsp; Assignment 5</span>
+          <span class="badge bg-success">Auto-graded</span>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Cloud Service Models and Docker Resource Limits</h5>
+          <p class="text-muted mb-2" style="font-size:0.83rem;">CO5 &nbsp;·&nbsp; 10 marks</p>
+          <p class="mb-2" style="font-size:0.88rem;">
+            Document IaaS, PaaS, and Serverless cloud models in <code>CLOUD.md</code>,
+            map the Docker Compose setup to the nearest model, and apply CPU and memory
+            resource limits to the Docker Compose file from Practical 11.
+          </p>
+          <p class="mb-2" style="font-size:0.83rem;">
+            <strong>Topics:</strong> Cloud Computing, IaaS/PaaS/Serverless, Docker resource limits
+          </p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="#" class="btn btn-sm btn-primary drive-btn" data-drive-key="A_W11" target="_blank" rel="noopener">
+              <i class="bi bi-file-earmark-text"></i> Description
+            </a>
+          </div>
+          <div class="faculty-only">
+            <div class="faculty-note">
+              <strong><i class="bi bi-clipboard-check"></i> Rubric</strong>
+              Dockerfile quality (4) · Compose setup (4) · Image size (2)
+            </div>
+            <div class="faculty-note">
+              <strong><i class="bi bi-github"></i> Repository</strong>
+              assignment-w11-&lt;rollno&gt; · CLOUD.md required · Passing: 7 / 10 (70%)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Assignment 6 Week 12 ─────────────────────────────────────── -->
+    <div class="col-md-6 col-lg-4 assignment-card" data-week="12">
+      <div class="card h-100">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <span><span class="badge wk-devops">Week 12</span> &nbsp; Assignment 6</span>
+          <span class="badge bg-success">Auto-graded</span>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Blue-Green Deployment Simulation with Docker Compose</h5>
+          <p class="text-muted mb-2" style="font-size:0.83rem;">CO5 &nbsp;·&nbsp; 10 marks</p>
+          <p class="mb-2" style="font-size:0.88rem;">
+            Simulate a blue-green deployment by running two backend service versions simultaneously
+            with Docker Compose. Switch traffic by changing active port mapping and document
+            the process with a rollback plan in <code>DEPLOYMENT.md</code>.
+          </p>
+          <p class="mb-2" style="font-size:0.83rem;">
+            <strong>Topics:</strong> Blue-Green deployment, rolling updates, zero-downtime deployment, Docker Compose
+          </p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="#" class="btn btn-sm btn-primary drive-btn" data-drive-key="A_W12" target="_blank" rel="noopener">
+              <i class="bi bi-file-earmark-text"></i> Description
+            </a>
+          </div>
+          <div class="faculty-only">
+            <div class="faculty-note">
+              <strong><i class="bi bi-clipboard-check"></i> Rubric</strong>
+              Blue-Green Setup (4) · Traffic Switch Simulation (3) · Documentation Quality (3)
+            </div>
+            <div class="faculty-note">
+              <strong><i class="bi bi-github"></i> Repository</strong>
+              assignment-w12-&lt;rollno&gt; · DEPLOYMENT.md required · Passing: 7 / 10 (70%)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Assignment 7 Week 13 ─────────────────────────────────────── -->
+    <div class="col-md-6 col-lg-4 assignment-card" data-week="13">
+      <div class="card h-100">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <span><span class="badge wk-devops">Week 13</span> &nbsp; Assignment 7</span>
+          <span class="badge bg-secondary">Manual Review</span>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">AI-Assisted UI Customization and Design</h5>
+          <p class="text-muted mb-2" style="font-size:0.83rem;">CO6 &nbsp;·&nbsp; 10 marks</p>
+          <p class="mb-2" style="font-size:0.88rem;">
+            Use an AI API (OpenAI or Gemini) to generate UI design suggestions for the Task
+            Management frontend. Implement at least one AI-suggested design change in React,
+            and critically evaluate AI output in <code>AIDESIGN.md</code>.
+          </p>
+          <p class="mb-2" style="font-size:0.83rem;">
+            <strong>Topics:</strong> AI-assisted UI design, prompt engineering, Responsible AI, CSS custom properties
+          </p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="#" class="btn btn-sm btn-primary drive-btn" data-drive-key="A_W13" target="_blank" rel="noopener">
+              <i class="bi bi-file-earmark-text"></i> Description
+            </a>
+          </div>
+          <div class="faculty-only">
+            <div class="faculty-note">
+              <strong><i class="bi bi-clipboard-check"></i> Rubric</strong>
+              AI Integration for Design (4) · Design Implementation (3) · Critical Evaluation (3)
+            </div>
+            <div class="faculty-note">
+              <strong><i class="bi bi-github"></i> Repository</strong>
+              assignment-w13-&lt;rollno&gt; · AIDESIGN.md required · Passing: 7 / 10 (70%)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /row -->
+</main>
+
+<!-- ── Footer ─────────────────────────────────────────────────────────────── -->
+<footer class="site-footer">
+  <div class="container">
+    <p><strong>ITUE301AWDF Advanced Web Development Frameworks</strong></p>
+    <p>Charotar University of Science and Technology (CHARUSAT) · Faculty of Technology and Engineering</p>
+    <p class="text-muted">5th Semester &nbsp;·&nbsp; Academic Year 2026–27 &nbsp;·&nbsp; Lab-Only &nbsp;·&nbsp; 2 hrs/week &nbsp;·&nbsp; &copy; 2026 CHARUSAT</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+<script>
+  // ── DOM-based week filter ────────────────────────────────────────────────
+  const filterBtns = document.querySelectorAll('.filter-bar button');
+  const cards      = document.querySelectorAll('.assignment-card');
+  const noResults  = document.getElementById('noResults');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const f = btn.getAttribute('data-filter');
+
+      // Update active state
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      // Show/hide cards
+      let visible = 0;
+      cards.forEach(card => {
+        const match = f === 'all' || card.getAttribute('data-week') === f;
+        card.style.display = match ? '' : 'none';
+        if (match) visible++;
+      });
+      noResults.style.display = visible === 0 ? '' : 'none';
+    });
+  });
+</script>
+</body>
+</html>
