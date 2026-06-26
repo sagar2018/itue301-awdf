@@ -13,8 +13,8 @@
 const DRIVE_LINKS = {
 
   // ── Course-level documents ──────────────────────────────────────────────
-  SYLLABUS:    '#',   // TODO: Full course syllabus (PDF)
-  LAB_MANUAL:  '#',   // TODO: Lab manual / general instructions (PDF)
+  SYLLABUS:    'https://drive.google.com/file/d/1FgDYDrhRXkl4ineJKoq8esmqP2MUGU5Y/view?usp=share_link',   // TODO: Full course syllabus (PDF)
+  LAB_MANUAL:  'https://drive.google.com/file/d/1hnrJd74t634Wc3yF1f9h-Ua0NVAJU_Ck/view?usp=share_link',   // TODO: Lab manual / general instructions (PDF)
 
   // ── Practical handouts (13 weeks) ───────────────────────────────────────
   //    Each link should point to the PDF/Doc for that week's lab sheet.
